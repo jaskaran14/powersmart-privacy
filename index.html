@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — PowerSmart Ontario</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f5f7fa;
+      color: #1a1a2e;
+      line-height: 1.7;
+    }
+    header {
+      background: #1a237e;
+      color: #fff;
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+    header h1 { font-size: 28px; font-weight: 700; margin-bottom: 6px; }
+    header p  { font-size: 14px; opacity: 0.75; }
+    .badge {
+      display: inline-block;
+      background: #1e88e5;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-top: 12px;
+      letter-spacing: 0.5px;
+    }
+    main {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 20px 60px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #1a237e;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2 .icon {
+      width: 32px; height: 32px;
+      background: #e8eaf6;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+    p  { font-size: 15px; color: #444; margin-bottom: 12px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { font-size: 15px; color: #444; margin-bottom: 6px; }
+    .highlight {
+      background: #e8f5e9;
+      border-left: 4px solid #43a047;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 15px;
+      color: #2e7d32;
+      font-weight: 600;
+    }
+    .contact {
+      background: #1a237e;
+      color: #fff;
+      border-radius: 16px;
+      padding: 28px 32px;
+      text-align: center;
+    }
+    .contact h2 { color: #fff; justify-content: center; }
+    .contact a  { color: #90caf9; }
+    .contact p  { color: rgba(255,255,255,0.8); }
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: #999;
+      padding-bottom: 40px;
+    }
+    @media (max-width: 600px) {
+      .card { padding: 20px; }
+      header h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>⚡ PowerSmart Ontario</h1>
+  <p>Privacy Policy</p>
+  <span class="badge">Last updated: May 5, 2025</span>
+</header>
+
+<main>
+
+  <!-- Summary -->
+  <div class="card">
+    <h2><span class="icon">📋</span> Summary</h2>
+    <div class="highlight">
+      PowerSmart Ontario does not collect, store, or share any personal information.
+      All data stays on your device.
+    </div>
+    <p>
+      This policy explains what information PowerSmart Ontario accesses, how it is used,
+      and what your rights are. We have designed this app with privacy as a default —
+      no accounts, no tracking, no advertising.
+    </p>
+  </div>
+
+  <!-- Data we do NOT collect -->
+  <div class="card">
+    <h2><span class="icon">🚫</span> What We Do NOT Collect</h2>
+    <p>PowerSmart Ontario does <strong>not</strong> collect or transmit:</p>
+    <ul>
+      <li>Your name, email address, or any personal identifier</li>
+      <li>Your location or GPS data</li>
+      <li>Your device ID, advertising ID, or phone number</li>
+      <li>Financial information of any kind</li>
+      <li>Usage analytics or crash reports sent to us</li>
+      <li>Contacts, photos, microphone, or camera data</li>
+    </ul>
+  </div>
+
+  <!-- Data stored locally -->
+  <div class="card">
+    <h2><span class="icon">📱</span> Data Stored on Your Device Only</h2>
+    <p>
+      The app saves the following data locally using Android's SharedPreferences
+      and local storage. This data <strong>never leaves your device</strong>:
+    </p>
+    <ul>
+      <li><strong>App settings</strong> — theme preference (light/dark), notification preferences</li>
+      <li><strong>Appliance run log</strong> — appliance name, date, duration, and estimated cost of runs you manually log</li>
+      <li><strong>Routines</strong> — schedules you set for appliance reminders</li>
+      <li><strong>Product catalog cache</strong> — a temporary copy of the affiliate product list (refreshed every 24 hours, stored locally)</li>
+      <li><strong>Onboarding state</strong> — whether you have completed the intro tutorial</li>
+      <li><strong>Season coach state</strong> — whether you have dismissed seasonal rate notifications</li>
+    </ul>
+    <p>
+      You can clear all of this data at any time by uninstalling the app or clearing
+      app data in Android Settings → Apps → PowerSmart Ontario → Clear Data.
+    </p>
+  </div>
+
+  <!-- Internet access -->
+  <div class="card">
+    <h2><span class="icon">🌐</span> Internet Access</h2>
+    <p>
+      The app requests internet permission for one purpose only:
+    </p>
+    <ul>
+      <li>
+        <strong>Affiliate product catalog</strong> — the app periodically fetches a JSON file
+        containing recommended product listings from a Google Sheets Web App or GitHub Gist
+        hosted by the developer. No personal data is sent in this request — it is a plain
+        HTTP GET request with no user identifiers.
+      </li>
+    </ul>
+    <p>
+      Ontario electricity rates are calculated entirely on-device using built-in rules.
+      No rate data is fetched from external servers.
+    </p>
+  </div>
+
+  <!-- Notifications -->
+  <div class="card">
+    <h2><span class="icon">🔔</span> Notifications</h2>
+    <p>
+      If you grant notification permission, the app schedules local push notifications
+      using Android's AlarmManager. These notifications are:
+    </p>
+    <ul>
+      <li>Generated entirely on your device</li>
+      <li>Not sent through any external push notification service</li>
+      <li>Not tracked or logged by the developer</li>
+    </ul>
+    <p>
+      You can disable notifications at any time in Android Settings → Apps →
+      PowerSmart Ontario → Notifications.
+    </p>
+  </div>
+
+  <!-- Third-party links -->
+  <div class="card">
+    <h2><span class="icon">🛍️</span> Third-Party Links (Amazon)</h2>
+    <p>
+      The app displays affiliate product recommendations that link to Amazon Canada.
+      When you tap a product link:
+    </p>
+    <ul>
+      <li>You are taken to Amazon's website or app in your browser</li>
+      <li>Amazon's own Privacy Policy applies from that point</li>
+      <li>We may earn a small commission if you make a purchase (at no extra cost to you)</li>
+      <li>We do not receive any information about whether you clicked or purchased</li>
+    </ul>
+    <p>
+      Amazon's Privacy Policy:
+      <a href="https://www.amazon.ca/gp/help/customer/display.html?nodeId=468496"
+         target="_blank" rel="noopener">amazon.ca/privacy</a>
+    </p>
+  </div>
+
+  <!-- Children -->
+  <div class="card">
+    <h2><span class="icon">👶</span> Children's Privacy</h2>
+    <p>
+      PowerSmart Ontario is intended for general audiences and is not directed at
+      children under the age of 13. We do not knowingly collect any personal
+      information from children. Since the app collects no personal information
+      from any user, there is no special risk to younger users.
+    </p>
+  </div>
+
+  <!-- Your rights -->
+  <div class="card">
+    <h2><span class="icon">✅</span> Your Rights</h2>
+    <p>
+      Because all data is stored locally on your device and no personal data is
+      collected by us, you have full control at all times:
+    </p>
+    <ul>
+      <li><strong>Access</strong> — all data is on your device; you own it</li>
+      <li><strong>Deletion</strong> — uninstall the app or use Clear Data to remove everything</li>
+      <li><strong>Portability</strong> — no data to export as none is held by us</li>
+      <li><strong>Opt-out</strong> — deny internet or notification permissions at any time</li>
+    </ul>
+  </div>
+
+  <!-- Changes -->
+  <div class="card">
+    <h2><span class="icon">📝</span> Changes to This Policy</h2>
+    <p>
+      If we ever update this policy, we will update the "Last updated" date at the
+      top of this page. We will not introduce data collection without clearly
+      communicating it in the app and updating this policy first.
+    </p>
+  </div>
+
+  <!-- Contact -->
+  <div class="contact">
+    <h2><span class="icon" style="background:rgba(255,255,255,0.15)">✉️</span> Contact Us</h2>
+    <p style="margin-top:10px;">
+      Questions about this privacy policy? Reach us at:
+    </p>
+    <p style="margin-top:8px;">
+      <a href="mailto:jaskaran4ca@gmail.com">jaskaran4ca@gmail.com</a>
+    </p>
+    <p style="margin-top:16px; font-size:13px; opacity:0.6;">
+      PowerSmart Ontario — Ontario electricity rate guide for Android
+    </p>
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2025 PowerSmart Ontario. All rights reserved.
+</footer>
+
+</body>
+</html>
